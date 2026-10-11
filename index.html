@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UTSAV '26 | College Fest</title>
+
+    <meta name="description"
+          content="Discover UTSAV '26, a celebration of technology, culture, creativity and talent.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                UTSAV<span>'26</span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle dark mode">
+                🌙
+            </button>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Home / Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="hero-content container">
+
+                <div class="hero-text">
+                    <p class="eyebrow">
+                        ✨ THE ULTIMATE COLLEGE FEST ✨
+                    </p>
+
+                    <h1>
+                        Where Culture<br>
+                        Meets <span>Innovation</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Experience a vibrant celebration of technology,
+                        art, music, dance and creativity at UTSAV '26.
+                        One campus, countless talents, unforgettable memories!
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#events" class="btn btn-primary">
+                            Explore Events →
+                        </a>
+
+                        <a href="#register" class="btn btn-secondary">
+                            Register Now
+                        </a>
+                    </div>
+
+                    <div class="hero-details">
+                        <div>
+                            <strong>06+</strong>
+                            <span>Exciting Events</span>
+                        </div>
+
+                        <div>
+                            <strong>01</strong>
+                            <span>Unforgettable Fest</span>
+                        </div>
+
+                        <div>
+                            <strong>∞</strong>
+                            <span>Memories</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Illustrations -->
+                <div class="hero-art" aria-label="Festival illustrations">
+
+                    <div class="art-circle"></div>
+
+                    <div class="floating-card dancer">
+                        <span>💃</span>
+                        <small>Dance & Culture</small>
+                    </div>
+
+                    <div class="floating-card laptop">
+                        <span>💻</span>
+                        <small>Technology</small>
+                    </div>
+
+                    <div class="floating-card robot">
+                        <span>🤖</span>
+                        <small>Innovation</small>
+                    </div>
+
+                    <div class="floating-card colours">
+                        <span>🎨</span>
+                        <small>Creativity</small>
+                    </div>
+
+                    <div class="floating-card music">
+                        <span>🎵</span>
+                    </div>
+
+                    <div class="floating-card bulb">
+                        <span>💡</span>
+                    </div>
+
+                    <div class="floating-card books">
+                        <span>📚</span>
+                    </div>
+
+                    <div class="floating-card tools">
+                        <span>🛠️</span>
+                    </div>
+
+                    <div class="hero-sticker">CREATE. CONNECT. CELEBRATE.</div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom-decoration">
+                ✦ &nbsp; CULTURE &nbsp; ✦ &nbsp; TECHNOLOGY &nbsp; ✦
+                &nbsp; CREATIVITY &nbsp; ✦
+            </div>
+
+        </section>
+
+
+        <!-- Events Section -->
+        <section class="section events-section" id="events">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">FIND YOUR SPOTLIGHT</p>
+
+                    <h2>Explore Our <span>Events</span></h2>
+
+                    <p>
+                        From coding challenges to cultural performances,
+                        there's something for everyone.
+                    </p>
+                </div>
+
+                <!-- Event Filter Buttons -->
+                <div class="event-filters">
+                    <button class="filter-btn active" data-filter="all">
+                        All Events
+                    </button>
+
+                    <button class="filter-btn" data-filter="technology">
+                        Technology
+                    </button>
+
+                    <button class="filter-btn" data-filter="culture">
+                        Culture
+                    </button>
+
+                    <button class="filter-btn" data-filter="creative">
+                        Creative
+                    </button>
+                </div>
+
+                <div class="event-grid" id="eventGrid">
+
+                    <!-- Event 1 -->
+                    <article class="event-card" data-category="technology">
+                        <div class="event-image event-code">
+                            <span>💻</span>
+                            <span class="event-tag">TECH</span>
+                        </div>
+
+                        <div class="event-info">
+                            <p class="event-date">📅 15 November 2026</p>
+                            <h3>CodeStorm</h3>
+
+                            <p>
+                                Put your programming skills to the test
+                                in an exciting coding challenge.
+                            </p>
+
+                            <p class="event-venue">
+                                📍 Computer Laboratory
+                            </p>
+
+                            <a href="#register" class="event-link">
+                                Join Event →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Event 2 -->
+                    <article class="event-card" data-category="culture">
+                        <div class="event-image event-dance">
+                            <span>💃</span>
+                            <span class="event-tag">CULTURE</span>
+                        </div>
+
+                        <div class="event-info">
+                            <p class="event-date">📅 16 November 2026</p>
+                            <h3>Nritya Utsav</h3>
+
+                            <p>
+                                Celebrate India's rich cultural heritage
+                                through classical and contemporary dance.
+                            </p>
+
+                            <p class="event-venue">
+                                📍 Main Auditorium
+                            </p>
+
+                            <a href="#register" class="event-link">
+                                Join Event →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Event 3 -->
+                    <article class="event-card" data-category="creative">
+                        <div class="event-image event-art">
+                            <span>🎨</span>
+                            <span class="event-tag">CREATIVE</span>
+                        </div>
+
+                        <div class="event-info">
+                            <p class="event-date">📅 16 November 2026</p>
+                            <h3>Rangrez</h3>
+
+                            <p>
+                                Bring your imagination to life with colours,
+                                design, painting and creative expression.
+                            </p>
+
+                            <p class="event-venue">
+                                📍 Arts and Activities Hall
+                            </p>
+
+                            <a href="#register" class="event-link">
+                                Join Event →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Event 4 -->
+                    <article class="event-card" data-category="technology">
+                        <div class="event-image event-innovation">
+                            <span>🤖</span>
+                            <span class="event-tag">TECH</span>
+                        </div>
+
+                        <div class="event-info">
+                            <p class="event-date">📅 17 November 2026</p>
+                            <h3>TechNova</h3>
+
+                            <p>
+                                Discover futuristic ideas, artificial
+                                intelligence, robotics and innovation.
+                            </p>
+
+                            <p class="event-venue">
+                                📍 Innovation Centre
+                            </p>
+
+                            <a href="#register" class="event-link">
+                                Join Event →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Event 5 -->
+                    <article class="event-card" data-category="technology">
+                        <div class="event-image event-workshop">
+                            <span>🛠️</span>
+                            <span class="event-tag">WORKSHOP</span>
+                        </div>
+
+                        <div class="event-info">
+                            <p class="event-date">📅 17 November 2026</p>
+                            <h3>Maker Workshop</h3>
+
+                            <p>
+                                Learn, experiment and build something
+                                new with fellow innovators.
+                            </p>
+
+                            <p class="event-venue">
+                                📍 Project Laboratory
+                            </p>
+
+                            <a href="#register" class="event-link">
+                                Join Event →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Event 6 -->
+                    <article class="event-card" data-category="culture">
+                        <div class="event-image event-stage">
+                            <span>🎤</span>
+                            <span class="event-tag">PERFORMANCE</span>
+                        </div>
+
+                        <div class="event-info">
+                            <p class="event-date">📅 18 November 2026</p>
+                            <h3>Stage Stories</h3>
+
+                            <p>
+                                Take the stage with music, drama, poetry
+                                and performances full of personality.
+                            </p>
+
+                            <p class="event-venue">
+                                📍 Open-Air Stage
+                            </p>
+
+                            <a href="#register" class="event-link">
+                                Join Event →
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Registration Section -->
+        <section class="section registration-section" id="register">
+
+            <div class="container registration-layout">
+
+                <div class="registration-text">
+                    <p class="eyebrow">YOUR FESTIVAL JOURNEY STARTS HERE</p>
+
+                    <h2>Be Part of <span>UTSAV '26</span></h2>
+
+                    <p>
+                        Ready to showcase your talent? Fill in the form
+                        to register for your favourite event.
+                    </p>
+
+                    <div class="registration-note">
+                        <span>🎯</span>
+                        <div>
+                            <h3>Choose Your Passion</h3>
+                            <p>Technology, culture, creativity and more.</p>
+                        </div>
+                    </div>
+
+                    <div class="registration-note">
+                        <span>✨</span>
+                        <div>
+                            <h3>Show Your Talent</h3>
+                            <p>Meet new people and create lasting memories.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="registration-form" id="registrationForm">
+
+                    <h3>Participant Registration</h3>
+
+                    <p class="form-subtitle">
+                        Fill in your details below.
+                    </p>
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text"
+                               id="fullName"
+                               name="fullName"
+                               placeholder="Enter your full name"
+                               required>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="rollNumber">Roll Number *</label>
+                            <input type="text"
+                                   id="rollNumber"
+                                   name="rollNumber"
+                                   placeholder="10-digit roll number"
+                                   pattern="[0-9]{10}"
+                                   maxlength="10"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel"
+                                   id="phone"
+                                   name="phone"
+                                   placeholder="10-digit number"
+                                   pattern="[6-9][0-9]{9}"
+                                   maxlength="10"
+                                   required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="you@example.com"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department">Department *</label>
+
+                        <select id="department"
+                                name="department"
+                                required>
+                            <option value="">Select your department</option>
+                            <option value="CSE">Computer Science Engineering</option>
+                            <option value="AIML">Artificial Intelligence & ML</option>
+                            <option value="IT">Information Technology</option>
+                            <option value="ECE">Electronics & Communication</option>
+                            <option value="EE">Electrical Engineering</option>
+                            <option value="ME">Mechanical Engineering</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="form-group gender-group">
+                        <legend>Gender *</legend>
+
+                        <label class="radio-label">
+                            <input type="radio"
+                                   name="gender"
+                                   value="Female"
+                                   required>
+                            Female
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio"
+                                   name="gender"
+                                   value="Male">
+                            Male
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio"
+                                   name="gender"
+                                   value="Other">
+                            Other
+                        </label>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="eventSelect">Select Event *</label>
+
+                        <select id="eventSelect"
+                                name="event"
+                                required>
+                            <option value="">Choose an event</option>
+                            <option value="CodeStorm">CodeStorm</option>
+                            <option value="Nritya Utsav">Nritya Utsav</option>
+                            <option value="Rangrez">Rangrez</option>
+                            <option value="TechNova">TechNova</option>
+                            <option value="Maker Workshop">Maker Workshop</option>
+                            <option value="Stage Stories">Stage Stories</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">
+                        Submit Registration →
+                    </button>
+
+                    <p class="form-message" id="formMessage"
+                       aria-live="polite"></p>
+
+                    <p class="form-disclaimer">
+                        * This is a frontend demonstration. Registration
+                        details are not saved to a database.
+                    </p>
+
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Gallery Section -->
+        <section class="section gallery-section" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">COLOURS, CREATIVITY & CAMPUS LIFE</p>
+
+                    <h2>A Little Bit of <span>Everything</span></h2>
+
+                    <p>
+                        A glimpse of the ideas, performances and experiences
+                        that make a college festival special.
+                    </p>
+                </div>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item gallery-one">
+                        <span class="gallery-emoji">💻</span>
+                        <div class="gallery-overlay">
+                            <h3>Future of Technology</h3>
+                            <p>Think. Code. Create.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-two">
+                        <span class="gallery-emoji">💃</span>
+                        <div class="gallery-overlay">
+                            <h3>Grace in Motion</h3>
+                            <p>Celebrating dance and culture.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-three">
+                        <span class="gallery-emoji">🎨</span>
+                        <div class="gallery-overlay">
+                            <h3>Colours of Creativity</h3>
+                            <p>Every idea has a colour.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-four">
+                        <span class="gallery-emoji">🤖</span>
+                        <div class="gallery-overlay">
+                            <h3>Ideas of Tomorrow</h3>
+                            <p>Innovation begins here.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-five">
+                        <span class="gallery-emoji">🎤</span>
+                        <div class="gallery-overlay">
+                            <h3>Own the Stage</h3>
+                            <p>Let your talent shine.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item gallery-six">
+                        <span class="gallery-emoji">🧑‍🤝‍🧑</span>
+                        <div class="gallery-overlay">
+                            <h3>Memories Together</h3>
+                            <p>One campus. Many stories.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="gallery-note">
+                    Note: These are illustrated placeholders. Replace them
+                    with real event photographs when available.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+
+            <div class="container about-layout">
+
+                <div class="about-art">
+                    <div class="about-art-main">
+                        <span>🎭</span>
+                        <span>💡</span>
+                        <span>💻</span>
+                        <span>🎨</span>
+                        <span>🎶</span>
+                        <span>🤖</span>
+                    </div>
+
+                    <div class="about-sticker">
+                        Celebrate Every Side of You!
+                    </div>
+                </div>
+
+                <div class="about-content">
+
+                    <p class="eyebrow">MORE THAN JUST A FEST</p>
+
+                    <h2>What is <span>UTSAV '26?</span></h2>
+
+                    <p>
+                        UTSAV '26 is a college festival concept designed
+                        to bring together technology, Indian culture,
+                        artistic expression and student innovation.
+                    </p>
+
+                    <p>
+                        The festival provides a platform for students
+                        to explore their interests, collaborate with
+                        others, share their talents and learn beyond
+                        the classroom.
+                    </p>
+
+                    <div class="about-points">
+
+                        <div class="about-point">
+                            <span>💻</span>
+                            <div>
+                                <h3>Innovation</h3>
+                                <p>Explore ideas and emerging technology.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-point">
+                            <span>🪷</span>
+                            <div>
+                                <h3>Culture</h3>
+                                <p>Celebrate India's diverse artistic traditions.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-point">
+                            <span>🎨</span>
+                            <div>
+                                <h3>Creativity</h3>
+                                <p>Give your imagination a platform.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Countdown Section -->
+        <section class="countdown-section">
+
+            <div class="container countdown-content">
+
+                <div>
+                    <p class="eyebrow">GET READY FOR THE CELEBRATION</p>
+                    <h2>The Excitement Starts <span>Now!</span></h2>
+                    <p>Every great memory begins with a little anticipation.</p>
+                </div>
+
+                <div class="countdown-box">
+                    <span class="countdown-icon">⏳</span>
+                    <div>
+                        <p>Countdown to UTSAV '26</p>
+                        <h3 id="countdown">Loading countdown...</h3>
+                    </div>
+                </div>
+
+                <div class="digital-clock">
+                    <span>🕒</span>
+                    <p id="digitalClock">00:00:00</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Feedback Section -->
+        <section class="section feedback-section" id="feedback">
+
+            <div class="container feedback-layout">
+
+                <div class="feedback-intro">
+                    <p class="eyebrow">YOUR VOICE MATTERS</p>
+
+                    <h2>Share Your <span>Feedback</span></h2>
+
+                    <p>
+                        Have an idea, suggestion or question?
+                        Let us know how we can make the festival better.
+                    </p>
+
+                    <div class="feedback-decoration">💌</div>
+                </div>
+
+                <form id="feedbackForm" class="feedback-form">
+
+                    <div class="form-group">
+                        <label for="feedbackName">Your Name *</label>
+                        <input type="text"
+                               id="feedbackName"
+                               name="feedbackName"
+                               placeholder="Enter your name"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedbackEmail">Email Address *</label>
+                        <input type="email"
+                               id="feedbackEmail"
+                               name="feedbackEmail"
+                               placeholder="Enter your email"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedbackType">Feedback Type *</label>
+                        <select id="feedbackType"
+                                name="feedbackType"
+                                required>
+                            <option value="">Select feedback type</option>
+                            <option value="Suggestion">Suggestion</option>
+                            <option value="Question">Question</option>
+                            <option value="Appreciation">Appreciation</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedbackMessage">Your Message *</label>
+                        <textarea id="feedbackMessage"
+                                  name="feedbackMessage"
+                                  rows="4"
+                                  placeholder="Write your feedback here..."
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Feedback →
+                    </button>
+
+                    <p class="form-message" id="feedbackStatus"
+                       aria-live="polite"></p>
+
+                    <p class="form-disclaimer">
+                        This demonstration form does not store or send messages.
+                    </p>
+
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+
+                    <h2>Get in <span>Touch</span></h2>
+
+                    <p>
+                        Have questions about events or registration?
+                        Contact the festival coordination team.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-card">
+                        <span class="contact-icon">👩‍💻</span>
+                        <h3>Event Coordinator</h3>
+                        <p>Antarleena Chakraborty</p>
+                        <a href="tel:6290855392">📞 6290855392</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="contact-icon">🎓</span>
+                        <h3>Faculty In-Charge</h3>
+                        <p>
+                            Head of the Department,<br>
+                            Artificial Intelligence & Machine Learning
+                        </p>
+                        <span class="contact-detail">HOD, AI & ML</span>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="contact-icon">🎉</span>
+                        <h3>Festival Information</h3>
+                        <p>Events, participation and registration queries</p>
+                        <a href="#events">Explore Events →</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo footer-logo">
+                UTSAV<span>'26</span>
+            </a>
+
+            <p>
+                A celebration of culture, technology and creativity.
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#events">Events</a>
+                <a href="#register">Register</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <p class="copyright">
+                © 2026 UTSAV '26. College Event Management Website.
+            </p>
+
+            <a href="#home" class="back-to-top">↑ Back to Top</a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
